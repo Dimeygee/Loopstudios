@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loopstudios</title>
+    <link rel='stylesheet' href='css/font-awesome.css' type='text/css'>
+    <link rel='stylesheet' href='css/aos.css' type='text/css'>
+	<link rel='stylesheet' href='css/style.css' type='text/css'>
+</head>
+<body>
+    
+
+    <header>
+        <div class='exp' data-aos="zoom-in" data-aos-delay="400">
+                immersive experiences that deliver
+        </div>
+    </header>
+    <nav >
+        <a href='index.html' data-aos='zoom-in'>
+            <h2>loopstudios</h2>
+        </a>
+        <div class='ham_div'  data-aos='zoom-in'>
+            <button class="hamburger" onclick="toggleMenu()">
+                <span class="hamburger-line hamburger-line-1"></span>
+                <span class="hamburger-line hamburger-line-2"></span>
+                <span class="hamburger-line hamburger-line-3"></span>
+              </button>
+        </div>
+        <ul >
+            <li data-aos='zoom-in' data-aos-delay="300" >About</li>
+            <li data-aos='zoom-in' data-aos-delay="400">Careers</li>
+            <li data-aos='zoom-in' data-aos-delay="500">Events</li>
+            <li data-aos='zoom-in' data-aos-delay="600">Products</li>
+            <li data-aos='zoom-in' data-aos-delay="700">Support</li>
+        </ul>
+    </nav>
+    <div class='sm_menu'>
+        <nav class='sm_nav'>
+            <a href='index.html'>
+                <h2>loopstudios</h2>
+            </a>
+            <div class='ham_div'>
+                <button class="hamburger" onclick="toggleMenu()">
+                    <span class="hamburger-line hamburger-line-1"></span>
+                    <span class="hamburger-line hamburger-line-2"></span>
+                    <span class="hamburger-line hamburger-line-3"></span>
+                  </button>
+            </div>
+        </nav>
+        <div class='sm_li'>
+            <ul>
+                <li>About</li>
+                <li>Careers</li>
+                <li>Events</li>
+                <li>Products</li>
+                <li>Support</li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <section class='one'>
+            <div data-aos='flip-left' class='one_img'></div>
+            <div class='vr'  data-aos='zoom-in'>
+                <h3>The leader in interactive VR</h3>
+                <p>Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
+            </div>
+        </section>
+        <section class='two'>
+            <div class='o_c'>
+                <h3 data-aos='zoom-in'>Our creations</h3>
+                <div>see all</div>
+            </div>
+            <div class='grid'>
+                <div data-aos='zoom-in' class='grid_one'>
+                    <p>deep earth</p>
+                </div>
+                <div data-aos='zoom-in' data-aos-delay="100" class='grid_two'>
+                    <p>Night arcade</p>
+                </div>
+                <div data-aos='zoom-in' data-aos-delay="200"  class='grid_thr'>
+                    <p>Soccer team VR </p>
+                </div>
+                <div  data-aos='zoom-in' data-aos-delay="300"  class='grid_fou'>
+                    <p>The<br>grid</p>
+                </div>
+                <div data-aos='zoom-in'  data-aos-delay="400" class='grid_fiv'>
+                    <p>From up above VR</p>
+                </div>
+                <div data-aos='zoom-in' data-aos-delay="500"  class='grid_six'>
+                    <p>Pocket borealis</p>
+                </div>
+                <div data-aos='zoom-in'  data-aos-delay="600" class='grid_sev'>
+                    <p>The curiosity</p>
+                </div>
+                <div data-aos='zoom-in'  data-aos-delay="700" class='grid_eig'>
+                    <p>Make it fisheye</p>
+                </div>
+            </div>
+            <span class='sm_all'>see all</span>
+        </section>
+    </main>
+    <footer>
+        <div class='f_1'>
+            <a href='index.html' data-aos='zoom-in'>
+                <h2>loopstudios</h2>
+            </a>
+            <ul>
+                <li data-aos='zoom-in'>About</li>
+                <li data-aos='zoom-in'>Careers</li>
+                <li data-aos='zoom-in'>Events</li>
+                <li data-aos='zoom-in'>Products</li>
+                <li data-aos='zoom-in'>Support</li>
+            </ul>
+        </div>
+        <div class='f_2' data-aos='zoom-in'>
+            <div class='icon_div' >
+                <span class='facebook' data-aos='zoom-in'><i  class='fa fa-facebook '></i></span>
+                <span class='twitter' data-aos='zoom-in'><i class='fa fa-twitter'></i></span>
+                <span class='pinterest' data-aos='zoom-in'><i class='fa fa-pinterest'></i></span>
+                <span class='instagram' data-aos='zoom-in'><i class='fa fa-instagram'></i></span>
+            </div>
+            <small>&copy; 2021 Loopstudios. All right reserved</small>
+        </div>
+    </footer>
+
+   
+    <script src='aos.js'></script>
+    <script>
+
+                AOS.init({
+                    duration: 800
+                });
+
+                function toggleMenu() {
+                    const menus = document.querySelectorAll('.hamburger');
+                    const sm_menu = document.querySelector('.sm_menu')
+                    const lists = document.querySelectorAll('.sm_li ul li')
+                    menus.forEach(menu => {
+                        menu.classList.toggle('active');
+                    })
+                    sm_menu.classList.toggle('active');
+                    lists.forEach(list => {
+                        list.classList.toggle('active')
+                    })
+                }
+
+
+                
+
+    </script>
+
+</body>
+</html>
