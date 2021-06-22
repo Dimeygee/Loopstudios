@@ -205,7 +205,7 @@ nav a, footer a{
     width:700px;
     position:absolute;
     right:120px;
-    bottom:132px;
+    bottom: 145px;
     padding:90px 0 0 70px ;
     background-color:white;
 }
@@ -301,7 +301,7 @@ nav a, footer a{
 footer{
     background-color:hsl(0, 0%, 0%);
     color:#fff;
-    padding:50px 100px;
+    padding: 80px 100px;
     display:flex;
     justify-content: space-between;
     font-family: alata;
@@ -309,7 +309,7 @@ footer{
 
 .f_2 .icon_div{
     text-align:right;
-    margin-bottom: 10px;
+    margin-bottom: 45px;
     cursor: pointer;
 }
 
@@ -351,6 +351,7 @@ footer{
 
 .f_1 ul{
     cursor:pointer;
+    margin-top:25px;
 }
 
 .f_1 ul li{
@@ -712,7 +713,7 @@ footer{
 
     .grid > div p{
         font-size:26px;
-        width:55%;
+        width: 65%;
         height:40px;
         line-height:40px;
         padding:10px 30px;
